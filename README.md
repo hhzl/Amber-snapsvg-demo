@@ -122,3 +122,9 @@ You may add
     Transcript show: s outerSVG.
     
 to the #doSnapSvg method to get the generated SVG code.
+
+
+### References
+
+- http://snapsvg.io/start/
+- http://stackoverflow.com/questions/tagged/snap.svg
