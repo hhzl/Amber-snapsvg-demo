@@ -1,6 +1,6 @@
 # Amber Smalltalk Snap.svg Demo
 
-Demo how to use the [Snapsvg libary](http://snapsvg.io/) in Amber Smalltalk
+Demo how to use the [Snapsvg libary](http://snapsvg.io/) in Amber Smalltalk 0.14.1
 
 ## Getting Started
 
