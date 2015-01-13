@@ -127,4 +127,5 @@ to the #doSnapSvg method to get the generated SVG code.
 ### References
 
 - http://snapsvg.io/start/
+- http://svg.dabbles.info/
 - http://stackoverflow.com/questions/tagged/snap.svg
