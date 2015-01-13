@@ -1,6 +1,6 @@
 # Amber Smalltalk Snap.svg Demo
 
-Demo how to use the Snapsvg libary in Amber Smalltalk
+Demo how to use the [Snapsvg libary](https://github.com/adobe-webplatform/Snap.svg) in Amber Smalltalk 0.14.1
 
 ## Getting Started
 
@@ -117,3 +117,8 @@ Create a method #doSnapSvg
     bigCircle attr: #{'fill' -> '#bada55'. 'stroke' -> '#000'. 'strokeWidth' -> 5}.
     smallCircle := s circle: 100 value: 150 value: 70.
 
+You may add
+
+    Transcript show: s outerSVG.
+    
+to the #doSnapSvg method to get the generated SVG code.
