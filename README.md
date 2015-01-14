@@ -123,6 +123,19 @@ You may add
     
 to the #doSnapSvg method to get the generated SVG code.
 
+### Create deployment file
+
+To create a deployment file run
+
+    grunt deploy
+    
+This creates a ``the.js`` which includes everything needed for deployment.
+Copy ``index.html`` and ``the.js`` to your deployment folder.
+
+To switch back to development mode run
+
+    grunt devel
+
 
 ### References
 
