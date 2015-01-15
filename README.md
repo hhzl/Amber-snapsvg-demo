@@ -139,6 +139,11 @@ To switch back to development mode run
 
 ### References
 
+#### Amber
+- http://amber-lang.net/
+- [Illustration](https://github.com/amber-smalltalk/amber/wiki/Building-blocks-of-Amber-application-%28and-library%29) about the different pieces involved.
+
+#### snap.svg
 - http://snapsvg.io/start/
 - http://svg.dabbles.info/
 - http://stackoverflow.com/questions/tagged/snap.svg
