@@ -88,6 +88,13 @@ to the package definition. Save and commit.
 Add a #snapsvg-button to the ``index.html`` page
 
 
+In Helios change import command to contain
+
+    imports: {'snapSvg' -> 'snap.svg'}
+
+
+This defines a package variable ``snapSvg``.
+
 Change method #augmentPage to
 
     augmentPage
@@ -102,8 +109,8 @@ Create a method #doSnapSvg
     http://snapsvg.io/start/ "
     
     | s bigCircle smallCircle |
-        
-    s := Snap value: 300 value: 600.
+
+    s := snapSvg value: 300 value: 600.        
     bigCircle := s circle: 150 value: 150 value: 100.
     bigCircle attr: #{'fill' -> '#bada55'. 'stroke' -> '#000'. 'strokeWidth' -> 5}.
     smallCircle := s circle: 100 value: 150 value: 70.
