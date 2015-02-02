@@ -76,11 +76,7 @@ Start amber-cli
 
     amber serve
 
-Open Helios and add
 
-    imports: {'snapSvg' -> 'snap.svg'}
-
-to the package definition. Save and commit.
 
 
 ### Add Smalltalk code
@@ -94,6 +90,9 @@ In Helios change import command to contain
 
 
 This defines a package variable ``snapSvg``.
+
+Save and commit. Reload.
+
 
 Change method #augmentPage to
 
