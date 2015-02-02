@@ -1,6 +1,16 @@
-define("amber-snapsvg/AmberSnapsvg", ["amber/boot", "amber_core/Kernel-Objects"], function($boot){
+define("amber-snapsvg/AmberSnapsvg", ["amber/boot"
+//>>excludeStart("imports", pragmas.excludeImports);
+, "snap.svg"
+//>>excludeEnd("imports");
+, "amber_core/Kernel-Objects"], function($boot
+//>>excludeStart("imports", pragmas.excludeImports);
+,snapSvg
+//>>excludeEnd("imports");
+){
 var $core=$boot.api,nil=$boot.nil,$recv=$boot.asReceiver,$globals=$boot.globals;
 $core.addPackage('AmberSnapsvg');
+$core.packages["AmberSnapsvg"].innerEval = function (expr) { return eval(expr); };
+$core.packages["AmberSnapsvg"].imports = ["snapSvg=snap.svg"];
 $core.packages["AmberSnapsvg"].transport = {"type":"amd","amdNamespace":"amber-snapsvg"};
 
 $core.addClass('AmberSnapsvg', $globals.Object, [], 'AmberSnapsvg');

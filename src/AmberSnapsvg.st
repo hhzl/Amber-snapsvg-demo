@@ -1,4 +1,5 @@
 Smalltalk createPackage: 'AmberSnapsvg'!
+(Smalltalk packageAt: 'AmberSnapsvg') imports: {'snapSvg' -> 'snap.svg'}!
 Object subclass: #AmberSnapsvg
 	instanceVariableNames: ''
 	package: 'AmberSnapsvg'!
