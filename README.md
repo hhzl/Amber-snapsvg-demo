@@ -67,29 +67,20 @@ Creation of snap.svg.amd.json
     }
 
 
-Add it to ``deploy.js``
-
-
-    define([
-        'amber/deploy',
-        'snap.svg',
-        // --- packages to be deployed begin here ---
-        'amber-snapsvg/AmberSnapsvg'
-        // --- packages to be deployed end here ---
-    ], function (amber) {
-        return amber;
-    });
-
 Generate new ``config.js`` with
 
     grunt devel
 
 
-Check that the library is properly referenced in ``config.js``
+Start amber-cli
 
+    amber serve
 
-    "snap.svg": "bower_components/snap.svg/dist/snap.svg",
+Open Helios and add
 
+    imports: {'snapSvg' -> 'snap.svg'}
+
+to the package definition. Save and commit.
 
 
 ### Add Smalltalk code
