@@ -27,7 +27,7 @@
   "private": false,
   "dependencies": {
     "amber": "^0.14.4",
-    "snap.svg": "~0.3.0"
+    "snap.svg": "^0.3.0"
   },
   "devDependencies": {
     "amber-ide-starter-dialog": "^0.1.0",
