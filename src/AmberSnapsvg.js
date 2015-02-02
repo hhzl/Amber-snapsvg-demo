@@ -147,12 +147,11 @@ selector: "doSnapSvg",
 protocol: 'action',
 fn: function (){
 var self=this;
-var s,snapLib,bigCircle,smallCircle;
+var s,bigCircle,smallCircle;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-snapLib=$recv(require)._value_("snap.svg");
-s=$recv(snapLib)._value_value_((300),(600));
+s=$recv(snapSvg)._value_value_((300),(600));
 bigCircle=$recv(s)._circle_value_value_((150),(150),(100));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["circle:value:value:"]=1;
@@ -161,15 +160,15 @@ $recv(bigCircle)._attr_($globals.HashedCollection._newFromPairs_(["fill","#bada5
 smallCircle=$recv(s)._circle_value_value_((100),(150),(70));
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-}, function($ctx1) {$ctx1.fill(self,"doSnapSvg",{s:s,snapLib:snapLib,bigCircle:bigCircle,smallCircle:smallCircle},$globals.AmberSnapsvg)});
+}, function($ctx1) {$ctx1.fill(self,"doSnapSvg",{s:s,bigCircle:bigCircle,smallCircle:smallCircle},$globals.AmberSnapsvg)});
 //>>excludeEnd("ctx");
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
 args: [],
-source: "doSnapSvg\x0a\x22translation to Smalltalk points 1 to 4 of\x0ahttp://snapsvg.io/start/ \x22\x0a\x0a| s snapLib bigCircle smallCircle |\x0a\x0asnapLib := require value: 'snap.svg'.\x0as := snapLib value: 300 value: 600.\x0a\x0abigCircle := s circle: 150 value: 150 value: 100.\x0abigCircle attr: #{'fill' -> '#bada55'. 'stroke' -> '#000'. 'strokeWidth' -> 5}.\x0asmallCircle := s circle: 100 value: 150 value: 70.\x0a\x22Transcript show: s outerSVG.\x22\x0a\x22s inspect\x22",
+source: "doSnapSvg\x0a\x22translation to Smalltalk points 1 to 4 of\x0ahttp://snapsvg.io/start/ \x22\x0a\x0a| s bigCircle smallCircle |\x0a\x0as := snapSvg value: 300 value: 600.\x0a\x0abigCircle := s circle: 150 value: 150 value: 100.\x0abigCircle attr: #{'fill' -> '#bada55'. 'stroke' -> '#000'. 'strokeWidth' -> 5}.\x0asmallCircle := s circle: 100 value: 150 value: 70.\x0a\x0a\x22Transcript show: s outerSVG.\x22\x0a\x22s inspect\x22",
 referencedClasses: [],
 //>>excludeEnd("ide");
-messageSends: ["value:", "value:value:", "circle:value:value:", "attr:"]
+messageSends: ["value:value:", "circle:value:value:", "attr:"]
 }),
 $globals.AmberSnapsvg);
 
